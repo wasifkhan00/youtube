@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.">
+    <meta name="keywords" content="video, sharing, camera phone, video phone, free, upload">
+    <title>YouTube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400&family=Spline+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style-fake.css">
+    <link rel="icon" href="./images/Yt favicon2.png " type="icon/img">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+
+</head>
+
+<body>
+    <header id="header">
+
+        <!-- logo start -->
+        <div class="logo-container">
+            <label for="checkbox">
+                <i class="fas fa-bars" id="check" onclick=clicking()></i>
+            </label>
+            <a href="./index.html" class="logo-anchor"> <img src="./images/logoedited2.png" alt="" id="logo"></a>
+        </div>
+        <!-- logo end -->
+
+        <!-- search start -->
+        <form action="" class="searchbar">
+
+            <input type="text" id="search-bar" placeholder="Search">
+            <i class="fas fa-search" id="search-icon" onclick=active()></i>
+            <i class="fas fa-microphone" id="microphone" onclick=Alerter()></i>
+
+
+        </form>
+        <!-- search end -->
+
+        <!-- nav-right start -->
+        <div class="buttonz">
+            <i class="fas fa-th" id="square-nav" onclick=Alerter()></i>
+            <i class="fas fa-ellipsis-v" id="vertical-dots-nav" onclick=Alerter()></i>
+            <button class="btnz" onclick=clicked()> <i class="fas fa-user"></i> SIGN
+                IN</button>
+        </div>
+
+
+
+        <!-- nav-right end -->
+
+    </header>
+
+    <!-- Top-start -->
+    <aside class="top">
+
+
+
+        <ul class="top-nav">
+            <li>
+                <a href="" id="anchor-tag"><i class="fas fa-home" id="top-icons"></i>
+                    <br> Home</a>
+            </li>
+            <li>
+                <a href="" id="anchor-tag"> <i class="far fa-compass" id="top-icons"></i> <br> Explore
+                </a>
+            </li>
+            <li>
+                <a href="" id="anchor-tag"> <i class="fab fa-youtube" id="top-icons"></i> <br> Shorts
+                </a>
+            </li>
+            <li> <a href="" id="anchor-tag"><i class="fab fa-youtube-square" id="top-icons"></i>
+                    <br> Subscription</a>
+            </li>
+
+            <li> <a href="" id="anchor-tag"><i class="fas fa-play" id="top-icons"></i> <br>
+                    Library</a></li>
+
+            <li> <a href="" id="anchor-tag"><i class="fas fa-history" id="top-icons"></i> <br>
+                    History</a></li>
+
+        </ul>
+
+
+
+    </aside>
+    <!-- Top-end -->
+    <div id="sign-in-google-container-opacity-low">
+        <main id="main-sign-in">
+            <button id="cross" onclick=crossPage()>&times;</button>
+
+            <figure id="logo-sign-in">
+                <img src="./images/Google-logo-sign-in.png" alt="">
+
+                <figcaption>
+                    <h3> Sign in</h3>
+                    <h5>to continue to YouTube</h5>
+                </figcaption>
+            </figure>
+
+            <form action="">
+                <div class="first-name-container" id="first-name-container">
+                    <input type="email" name="first-name" id="first-name" placeholder="Email or phone" required>
+                </div>
+
+                <div class="first-name-container" id="password-container">
+                    <input type="password" name="first-name" id="first-name" placeholder="Enter 8 digit password" required>
+                </div>
+
+                <a href="" id="forgot" onclick=forgotAlert()> Forgot email?</a>
+            </form>
+
+            <div class="sign-in-warning">
+                <span id="sign-in-privately-message" style=" margin-bottom: 1rem;">Not
+                    Your
+                    computer? Use Guest
+                    mode to
+                    sign in privately.</span> <br>
+                <a href="" id="sign-in-learn-more">Learn More</a>
+            </div>
+
+            <div class="buttons-container-sign-in">
+                <button class="create-account">Create account</button>
+                <button class="sign-in-btn" id="next-btn" onclick=password()>Next</button>
+                <button class="sign-in-btn" id="submit-btn" onclick=Certanly()>Confirm</button>
+
+            </div>
+
+
+        </main>
+
+        <div id="overlay"></div>
+
+    </div>
+
+
+    <!-- breadcrumb section-start -->
+    <section id="breadcrumb">
+        <ul id="breadcrumb-nav">
+            <li class="active">
+                <a href="">All</a>
+            </li>
+            <li>
+                <a href="">Comedy</a>
+            </li>
+            <li>
+                <a href="">Music</a>
+            </li>
+            <li>
+                <a href="">Pop-up</a>
+            </li>
+            <li>
+                <a href="">Raps</a>
+            </li>
+
+            <li>
+                <a href="">News</a>
+            </li>
+            <li>
+                <a href="">Politics</a>
+            </li>
+            <li>
+                <a href="">COVID-19</a>
+            </li>
+
+            <li>
+                <a href="">Wolfeinstein</a>
+            </li>
+
+            <li>
+                <a href="">IGN</a>
+            </li>
+
+            <li class="entity">
+                <a href="" onclick=breadCrumb() id="entity">&gt;</a>
+            </li>
+
+
+
+        </ul>
+
+    </section>
+    <!-- breadcrumb section-end -->
+
+
+
+
+
+
+
+    <!-- section-1 videos start -->
+    <main id="main-1">
+        <div class="videos">
+            <!-- article 1 start -->
+            <article class="video-container">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/aish.jpg" alt="">
+                    <div class="span" id="span-1">
+                        <span>10:30</span>
+                    </div>
+
+                </a>
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof15.jpg" alt="">
+                    </a>
+
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">2 Din mai paise kaise dbl <br> kre? </a>
+                        <a href="# " class="channel-name">Double-Shah ✔</a>
+                        <span>1M views • 1 year ago</span>
+
+                    </div>
+                </div>
+            </article>
+            <!-- article 1 end -->
+            <!-- article 2 start -->
+            <article class="video-container">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/mai hoo.jpg" alt="">
+                    <div class="span" id="span-2">
+                        <span>15:09</span>
+                    </div>
+                </a>
+
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/gfxm.jpg" alt="">
+                    </a>
+
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">Mai hoo apka teacher <br> imran </a>
+                        <a href="# " class="channel-name">GFX Mentor ✔</a>
+                        <span>100k views • 2 weeks ago</span>
+
+                    </div>
+                </div>
+            </article>
+            <!-- article 2 end -->
+            <!-- article 3 start -->
+            <article class="video-container" id="article-3">
+                <a href="./page-1.html" class="video-thumbnail">
+                    <img src="./images/mjnu2.jpg" alt="">
+                    <div class="span" id="span-3">
+                        <span>06:00</span>
+                    </div>
+                </a>
+
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/majnu2.jpg" alt="">
+                    </a>
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">4 coca delay kro/Janiye <br>kaise? </a>
+                        <a href="# " class="channel-name">Majnu Bhai ✔</a>
+                        <span>10M views • 6 days ago</span>
+                    </div>
+                </div>
+            </article>
+            <!-- article 3 end -->
+            <!-- article 4 start -->
+            <article class="video-container" id="article-4">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/aish.jpg" alt="">
+                    <div class="span" id="span-4">
+                        <span>10:30</span>
+                    </div>
+                </a>
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof15.jpg" alt="">
+                    </a>
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">25 din mai paise dbl kaise <br> kre?</a>
+                        <a href="# " class="channel-name">4 coca ✔</a>
+                        <span>1B views • 1 week ago</span>
+                    </div>
+                </div>
+            </article>
+            <!-- article 4 end -->
+
+
+    </main>
+    <!-- section-1 videos end -->
+
+    <!-- section-2 videos start -->
+    <main id="main-2">
+        <div class="videos">
+            <!-- article 1 start -->
+            <article class="video-container">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/wbbbb.jpg" alt="">
+                    <div class="span" id="span-5">
+                        <span>10:30</span>
+                    </div>
+
+                </a>
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/legion2.jpg" alt="">
+                    </a>
+
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How to be <br>anonymous?</a>
+                        <a href="# " class="channel-name">Anonymous ✔</a>
+                        <span>1M views • 8 months ago</span>
+
+                    </div>
+                </div>
+            </article>
+            <!-- article 1 end -->
+            <!-- article 2 start -->
+            <article class="video-container">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/devp.jpg" alt="">
+                    <div class="span" id="span-6">
+                        <span>15:09</span>
+                    </div>
+                </a>
+
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof3.jpg" alt="">
+                    </a>
+
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How to become a <br> developer? </a>
+                        <a href="# " class="channel-name">Fireship ✔</a>
+                        <span>100k views • 23 hours ago</span>
+
+                    </div>
+                </div>
+
+
+
+
+            </article>
+            <!-- article 2 end -->
+            <!-- article 3 start -->
+            <article class="video-container" id="article-3">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/mark.jpg" alt="">
+                    <div class="span" id="span-7">
+                        <span>06:00</span>
+                    </div>
+                </a>
+
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof5.jpg" alt="">
+                    </a>
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How zuckerberg control <br> u</a>
+                        <a href="# " class="channel-name">Devslopes ✔</a>
+                        <span>10M views • 7 hours ago</span>
+                    </div>
+                </div>
+            </article>
+            <!-- article 3 end -->
+            <!-- article 4 start -->
+            <article class="video-container" id="article-4">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/susan.jpg" alt="">
+                    <div class="span" id="span-8">
+                        <span>10:30</span>
+                    </div>
+                </a>
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof4.jpg" alt="">
+                    </a>
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How I became Youtube's <br> CEO?</a>
+                        <a href="# " class="channel-name">Susan Wojiciki ✔</a>
+                        <span>1B views • 3 years ago</span>
+                    </div>
+                </div>
+            </article>
+            <!-- article 4 end -->
+
+        </div>
+
+
+    </main>
+    <!-- section-2 end -->
+
+    <!-- section-3 videos start -->
+    <main id="main-3">
+        <div class="videos">
+            <!-- article 1 start -->
+            <article class="video-container">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/to the moon2.jpg" alt="">
+                    <div class="span" id="span-9">
+                        <span>10:30</span>
+                    </div>
+
+                </a>
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/to the moon.jpg" alt="">
+                    </a>
+
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">Let's go To the moon with doge coin..</a>
+                        <a href="# " class="channel-name">Doge coin ✔</a>
+                        <span>11M views • 22 secs ago</span>
+
+                    </div>
+                </div>
+            </article>
+            <!-- article 1 end -->
+            <!-- article 2 start -->
+            <article class="video-container">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/crypto.jpg" alt="">
+                    <div class="span" id="span-10">
+                        <span>15:09</span>
+                    </div>
+                </a>
+
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/memee.png" alt="">
+                    </a>
+
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">Bitcoin Memes of 2022 for crypto owners</a>
+                        <a href="# " class="channel-name">Memer ✔</a>
+                        <span>100k views • 9 months ago</span>
+
+                    </div>
+                </div>
+
+
+
+
+            </article>
+            <!-- article 2 end -->
+            <!-- article 3 start -->
+            <article class="video-container" id="article-3">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/elom.jpg" alt="">
+                    <div class="span" id="span-11">
+                        <span>06:00</span>
+                    </div>
+                </a>
+
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/ts.png" alt="">
+                    </a>
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">To the moon with <br> ElON MUSK </a>
+                        <a href="# " class="channel-name">Tesla ✔</a>
+                        <span>10M views • 4 years ago</span>
+                    </div>
+                </div>
+            </article>
+            <!-- article 3 end -->
+            <!-- article 4 start -->
+            <article class="video-container" id="article-4">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/btc2.jpg" alt="">
+                    <div class="span" id="span-12">
+                        <span>10:30</span>
+                    </div>
+                </a>
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/cr.png" alt="">
+                    </a>
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">pay tribute to crypto <br> owners </a>
+                        <a href="# " class="channel-name">Crypto Crash ✔</a>
+                        <span>1B views • 3 weeks ago</span>
+                    </div>
+                </div>
+            </article>
+            <!-- article 4 end -->
+
+        </div>
+
+
+    </main>
+    <!-- section-3 end -->
+
+    <!--section-4 start  -->
+    <main id="main-2" class="main-4">
+        <div class="videos">
+            <!-- article 1 start -->
+            <article class="video-container">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/wbbbb.jpg" alt="">
+                    <div class="span" id="span-5">
+                        <span>10:30</span>
+                    </div>
+
+                </a>
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/legion2.jpg" alt="">
+                    </a>
+
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How to be <br>anonymous?</a>
+                        <a href="# " class="channel-name">Anonymous ✔</a>
+                        <span>1M views • 8 months ago</span>
+
+                    </div>
+                </div>
+            </article>
+            <!-- article 1 end -->
+            <!-- article 2 start -->
+            <article class="video-container">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/devp.jpg" alt="">
+                    <div class="span" id="span-6">
+                        <span>15:09</span>
+                    </div>
+                </a>
+
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof3.jpg" alt="">
+                    </a>
+
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How to become a <br> developer? </a>
+                        <a href="# " class="channel-name">Fireship ✔</a>
+                        <span>100k views • 23 hours ago</span>
+
+                    </div>
+                </div>
+
+
+
+
+            </article>
+            <!-- article 2 end -->
+            <!-- article 3 start -->
+            <article class="video-container" id="article-3">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/mark.jpg" alt="">
+                    <div class="span" id="span-7">
+                        <span>06:00</span>
+                    </div>
+                </a>
+
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof5.jpg" alt="">
+                    </a>
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How zuckerberg control <br> u</a>
+                        <a href="# " class="channel-name">Devslopes ✔</a>
+                        <span>10M views • 7 hours ago</span>
+                    </div>
+                </div>
+            </article>
+            <!-- article 3 end -->
+            <!-- article 4 start -->
+            <article class="video-container" id="article-4">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/susan.jpg" alt="">
+                    <div class="span" id="span-8">
+                        <span>10:30</span>
+                    </div>
+                </a>
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof4.jpg" alt="">
+                    </a>
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How I became Youtube's <br> CEO?</a>
+                        <a href="# " class="channel-name">Susan Wojiciki ✔</a>
+                        <span>1B views • 3 years ago</span>
+                    </div>
+                </div>
+            </article>
+            <!-- article 4 end -->
+
+        </div>
+
+
+    </main>
+    <!-- section-4 end -->
+
+    <!--section-5 start  -->
+    <main id="main-2" class="main-5">
+        <div class="videos">
+            <!-- article 1 start -->
+            <article class="video-container">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/wbbbb.jpg" alt="">
+                    <div class="span" id="span-5">
+                        <span>10:30</span>
+                    </div>
+
+                </a>
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/legion2.jpg" alt="">
+                    </a>
+
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How to be <br>anonymous?</a>
+                        <a href="# " class="channel-name">Anonymous ✔</a>
+                        <span>1M views • 8 months ago</span>
+
+                    </div>
+                </div>
+            </article>
+            <!-- article 1 end -->
+            <!-- article 2 start -->
+            <article class="video-container">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/devp.jpg" alt="">
+                    <div class="span" id="span-6">
+                        <span>15:09</span>
+                    </div>
+                </a>
+
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof3.jpg" alt="">
+                    </a>
+
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How to become a <br> developer? </a>
+                        <a href="# " class="channel-name">Fireship ✔</a>
+                        <span>100k views • 23 hours ago</span>
+
+                    </div>
+                </div>
+
+
+
+
+            </article>
+            <!-- article 2 end -->
+            <!-- article 3 start -->
+            <article class="video-container" id="article-3">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/mark.jpg" alt="">
+                    <div class="span" id="span-7">
+                        <span>06:00</span>
+                    </div>
+                </a>
+
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof5.jpg" alt="">
+                    </a>
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How zuckerberg control <br> u</a>
+                        <a href="# " class="channel-name">Devslopes ✔</a>
+                        <span>10M views • 7 hours ago</span>
+                    </div>
+                </div>
+            </article>
+            <!-- article 3 end -->
+            <!-- article 4 start -->
+            <article class="video-container" id="article-4">
+                <a href="page-1.html" class="video-thumbnail">
+                    <img src="./images/susan.jpg" alt="">
+                    <div class="span" id="span-8">
+                        <span>10:30</span>
+                    </div>
+                </a>
+                <div class="video-bottom">
+                    <a href="" class="prof-pic">
+                        <img src="./images/prof4.jpg" alt="">
+                    </a>
+                    <div class="video-bottom-right">
+                        <a href=" # " id="video-title">How I became Youtube's <br> CEO?</a>
+                        <a href="# " class="channel-name">Susan Wojiciki ✔</a>
+                        <span>1B views • 3 years ago</span>
+                    </div>
+                </div>
+            </article>
+            <!-- article 4 end -->
+
+        </div>
+
+
+    </main>
+    <!-- section-5 end -->
+
+
+
+
+
+
+    <script src="./js/indexfake.js"></script>
+
+</body>
+
+</html>
